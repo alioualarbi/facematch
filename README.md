@@ -1,7 +1,5 @@
 # Facematch : Running Automl container exports on Cloud Run
 
-Context: https://groups.google.com/a/google.com/d/topic/ml-discuss/_L0aSD-rheA/discussion
-
 For scenarios with many, low QPS models, hosting on AutoML infrastructure with 24/7 pricing can feel very expensive.
 
 It is possible to serve the trained model with Cloud-Run, which scales to zero and is pay per request.
