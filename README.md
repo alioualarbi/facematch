@@ -35,4 +35,4 @@ Get the URL for the Cloud Run Service:
 
 Run the client with the sample image:
 
-    python client.py
+    python face_detect_demo.py
