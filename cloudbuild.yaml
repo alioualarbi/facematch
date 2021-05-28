@@ -9,6 +9,6 @@ steps:
 #  args: ['run', 'deploy', $_MODEL_SERVICE, '--image', 'gcr.io/$PROJECT_ID/$_MODEL_SERVICE', '--region', 'us-central1', '--allow-unauthenticated']
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', $_MODEL_SERVICE, '--image', 'gcr.io/$PROJECT_ID/$_MODEL_SERVICE', '--region', 'us-central1', '--allow-unauthenticated', '--platform', 'managed']
+  args: ['run', 'deploy', $_MODEL_SERVICE, '--image', 'gcr.io/$PROJECT_ID/$_MODEL_SERVICE', '--region', 'us-central1', '--allow-unauthenticated', '--platform', 'managed', '--set-env-vars DEFAULTPORT=8080']
 images:
 - gcr.io/$PROJECT_ID/$_MODEL_SERVICE
